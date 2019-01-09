@@ -35,7 +35,7 @@ header nav ul li a {
 }
 
 .home {
-  background-color: #FFF7C9;
+  background-color: #eee;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,11 +69,8 @@ header nav ul li a {
   margin: 20px;
   transition: 0.2s;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ece1a1+0,fff7c7+42 */
-  background: #ece1a1; /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #ece1a1 0%, #fff7c7 42%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, #ece1a1 0%,#fff7c7 42%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #ece1a1 0%,#fff7c7 42%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ece1a1', endColorstr='#fff7c7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background: #eee; /* Old browsers */
+  
 }
 
 .flashcard a.linktosingle {

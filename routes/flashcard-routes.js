@@ -1,17 +1,23 @@
-const express = require('express'); //imports express
-const flashcardsRouter = express.Router(); //makes router
-const flashcardsController = require('../controllers/flashcards-controller');//imports flashcards controller file
+const express = require('express');
 
-flashcardsRouter.get('/', flashcardsController.index); //gets all
+const flashcardsRouter = express.Router();
 
-flashcardsRouter.get('/new', (req, res) => { //gets one
+const flashcardsController = require('../controllers/flashcards-controller')
+
+flashcardsRouter.get('/', flashcardsController.index);
+
+flashcardsRouter.get('/new', (req, res) => {
   res.render('flashcards/flashcards-new');
-})
+});
 
-flashcardsRouter.post('/', flashcardsController.create); //creates flashcard
-flashcardsRouter.get('/:id', flashcardsController.show); //shows flashcard
-flashcardsRouter.get('/:id/edit', flashcardsController.edit); //edits flashcard
-flashcardsRouter.put('/:id', flashcardsController.update); //updates flashcard
-flashcardsRouter.delete('/:id', flashcardsController.delete);//deletes flashcard
+flashcardsRouter.post('/', flashcardsController.create);
+
+flashcardsRouter.get('/:id', flashcardsController.show);
+
+flashcardsRouter.get('/:id/edit', flashcardsController.edit);
+
+flashcardsRouter.put('/:id', flashcardsController.update);
+
+flashcardsRouter.delete('/:id', flashcardsController.delete);
 
 module.exports = flashcardsRouter;
